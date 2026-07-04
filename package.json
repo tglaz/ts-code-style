@@ -1,0 +1,16 @@
+{
+  "name": "@tglaz/ts-code-style",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tglaz/ts-code-style.git"
+  },
+  "license": "ISC",
+  "peerDependencies": {
+    "@eslint/js": ">=9",
+    "eslint": ">=9",
+    "typescript-eslint": ">=8"
+  }
+}
