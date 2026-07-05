@@ -2,7 +2,10 @@
   "name": "@tglaz/ts-code-style",
   "version": "1.0.0",
   "type": "module",
-  "main": "index.js",
+  "exports": {
+    "./eslint": "./eslint.js",
+    "./prettier": "./prettier.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tglaz/ts-code-style.git"
