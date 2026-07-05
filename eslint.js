@@ -36,15 +36,28 @@ export default [
       // Use template literals instead of string concatenation.
       "prefer-template": "error",
 
-      // Require a blank line before return when preceded by declarations or expressions.
       // Require a blank line between consecutive if statements.
       "padding-line-between-statements": [
         "error",
+        // Add padding before most non-leading `return` statements.
         {
           blankLine: "always",
-          prev: ["const", "let", "var", "expression"],
+          prev: [
+            "const",
+            "let",
+            "var",
+            "expression",
+            "if",
+            "for",
+            "while",
+            "do",
+            "switch",
+            "try",
+            "block",
+          ],
           next: "return",
         },
+        // Separate consecutive `if` statements.
         { blankLine: "always", prev: "if", next: "if" },
       ],
     },
